@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <div class="home">
+        <div class="home_missionStatement">
+            <div class="home_missionStatement_header">
+                <p>Our Goal</p>
+            </div>
+            <div class="home_missionStatement_body">
+                <div class="home_missionStatement_bodyContent">
+                    <p>Red Knot Culinary utilizes Chef Phill Camper's extensive culinary background and knowledge to provide an amazing dining experience. 
+                    Our cuisine is inspired by the coast, but rooted in love for locally sourced seasonal ingredients. We embrace the flavors of the American Southeast and techniques of France to create truly one of a kind dishes we know you'll love. Please follow our journey and events schedule on Facebook and Instagram. <br/>
+                    
+                    </p>
+                </div>
+                <div class="home_missionStatement_bodyImg">
+                    <div class="home_missionStatement_bodyImgL">
+                        <p>Much love,</p>
+                        <p style="padding-bottom: 30%">Red Knot Culinary</p>
+                        <div class="home_missionStatement_bodyImgL_links">
+                            <div class="home_missionStatement_bodyImgL_linksInner">
+                                {% load static %}
+                                <a href="https://www.facebook.com/redknotculinary/"><img src="{% static 'images/fb_logo_link.png' %}" alt="fb_logo"/></a>
+                                {% load static %}
+                                <a href=""><img src="{% static 'images/ig_logo_link.png' %}" alt="ig_logo"/></a>
+                                {% load static %}
+                                <a href=""><img src="{% static 'images/twitter_logo_link.png' %}" alt="twitter_logo"/></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    {% load static %}
+                    <img src="{% static 'images/phil1.jpg' %}" alt="phil1"/>            
+                </div>
+            </div>
+        </div>
+        
+    </div>
+{% endblock %}
+
+<!-- {% load static %}
+<img src="{% static 'images/phil1.jpg' %}" alt="phil1"/> -->
